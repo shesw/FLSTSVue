@@ -6,9 +6,12 @@ import router from './router'
 import store from '@/store/store'
 import MyRequest from '@/core/request'
 import VueResource from 'vue-resource'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
+Vue.use(iView)
 
 var http = new MyRequest()
 
