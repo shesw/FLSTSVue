@@ -1,5 +1,5 @@
 <template>
-  <div style="min-height: 200px;">
+  <div>
     <img :src="coverpic" class="cover-pic">
   </div>
 </template>

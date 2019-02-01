@@ -22,7 +22,9 @@
       </Header>
       <Content :style="{padding: '0 50px'}">
         <Card>
-          <router-view />
+          <div style="min-height: 400px;">
+            <router-view/>
+          </div>
         </Card>
       </Content>
       <Footer class="layout-footer-center">2019-02-01 &copy; 三羽谶</Footer>
@@ -34,9 +36,7 @@
 export default {
   name: "homepage",
   data() {
-    return {
-      
-    };
+    return {};
   }
 };
 </script>
