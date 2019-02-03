@@ -16,7 +16,7 @@ export default new Router({
       path: '',
       component: CoverPic
     }, {
-      path: '/playpage',
+      path: 'playpage',
       name: 'playpage',
       component: Playpage
     }]
