@@ -4,7 +4,7 @@ const settings = new Settings()
 const SERVER_ADDRESS = settings.SERVER_ADDRESS
 const TIMEOUT = 60000
 export default class MyRequest {
-  _request (method, path, data, header) {
+  _request (method, path, data, header, isJsonp) {
     const url = `${SERVER_ADDRESS}${path}`
     const fHeader = {
       // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -19,18 +19,20 @@ export default class MyRequest {
     }
     switch (method) {
       case 'GET':
+        console.log('http request on ' + url + ' by ' + method)
         return Vue.http.get(url, config)
       case 'POST':
+        console.log('http request on ' + url + ' by ' + method)
         return Vue.http.post(url, data, config)
       default:
         break
     }
   }
 
-  get (path, data, header) {
-    return this._request('GET', path, data, header)
+  get (path, data, header, isJsonp) {
+    return this._request('GET', path, data, header, isJsonp)
   }
-  post (path, data, header) {
-    return this._request('POST', path, data, header)
+  post (path, data, header, isJsonp) {
+    return this._request('POST', path, data, header, isJsonp)
   }
 }
