@@ -8,13 +8,13 @@
             <MenuItem name="1" to="/">
               <Icon type="ios-navigate"></Icon>首页
             </MenuItem>
-            <MenuItem name="2" to="playpage">
-              <Icon type="ios-keypad"></Icon>歌单
-            </MenuItem>
-            <MenuItem name="3">
+            <MenuItem name="2">
               <Icon type="ios-analytics"></Icon>关于
             </MenuItem>
-            <MenuItem name="4">
+            <MenuItem name="3" to="playpage" style="opacity: 0;">
+              <Icon type="ios-keypad"></Icon>歌单
+            </MenuItem>
+            <MenuItem name="4" style="opacity: 0;">
               <Icon type="ios-paper"></Icon>登陆
             </MenuItem>
           </div>
